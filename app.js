@@ -1,7 +1,8 @@
-let var = '"this a very good variable.',
-
-console.error(typeof(380))};
+var test = "this a very good variable.";
 
 function e() {
-    return this;
+  console.log(test);
+  return this;
 }
+
+e();
