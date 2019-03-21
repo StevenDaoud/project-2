@@ -1,6 +1,7 @@
-let varTest = 'this a very good variable';
+var test = 'this a very good variable';
 
-let joke = new Promise((resolve, reject) => {
+var joke = new Promise((resolve, reject) => {
+    console.log(test);
     let result = setTimeout(() => {
         console.log("...NOT");
     },1000);
@@ -14,3 +15,4 @@ async function e(testVar) {
 }
 
 e(varTest);
+
