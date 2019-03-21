@@ -10,7 +10,7 @@ let joke = new Promise((resolve, reject) => {
 async function e(testVar) {
     console.log(varTest);
     await joke;
-
+    return;
 }
 
 e(varTest);
