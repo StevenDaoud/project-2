@@ -1,7 +1,16 @@
-let var = '"this a very good variable.',
+let varTest = 'this a very good variable';
 
-console.error(typeof(380))};
+let joke = new Promise((resolve, reject) => {
+    let result = setTimeout(() => {
+        console.log("...NOT");
+    },1000);
+    resolve(result);
+})
 
-function e() {
-    return this;
+async function e(testVar) {
+    console.log(varTest);
+    await joke;
+
 }
+
+e(varTest);
